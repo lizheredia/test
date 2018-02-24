@@ -1,0 +1,23 @@
+{
+"name": "test",
+"version": "1.0.0",
+"description": "> test",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"repository": {
+"type": "git",
+"url": "git+https://github.com/lizheredia/test.git"
+},
+"keywords": [],
+"author": "",
+"license": "ISC",
+"bugs": {
+"url": "https://github.com/lizheredia/test.git/issues"
+},
+"homepage": "https://github.com/lizheredia/test.git#readme",
+"devDependencies": {
+"cypress": "^2.0.0"
+}
+}

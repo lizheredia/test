@@ -1,1 +1,6 @@
-test/cypress/screenshots/*
+cypress/screenshots/*
+cypress/videos/
+test-results.xml
+results/
+.DS_Store
+node_modules/
