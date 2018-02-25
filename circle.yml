@@ -40,7 +40,7 @@ jobs:
       - attach_workspace:
           at: /root/app
       - run: ls -la cypress
-      - run: ls -la cypress/integration
+      - run: firefox --version
       - run: pwd
       - run: ls -la cypress/integration
       - run:
