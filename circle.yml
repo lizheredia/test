@@ -41,9 +41,7 @@ jobs:
           at: /root/app
       - run: ls -la cypress
       - run: wget -O FirefoxSetup.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
-      - run: mkdir /opt/firefox2
-      - run: tar xjf FirefoxSetup.tar.bz2 -C /opt/firefox2/
-      - run: ln -s /opt/firefox2/firefox/firefox /usr/lib/firefox-esr/firefox-esr
+      - run: tar xjf FirefoxSetup.tar.bz2 -C /opt/firefox/
       - run: firefox --version
       - run: pwd
       - run: ls -la cypress/integration
