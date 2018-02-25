@@ -78,9 +78,9 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - testA:
+      - testFF:
           requires:
             - build
-      - testB:
+      - testChrome:
           requires:
             - build
