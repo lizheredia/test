@@ -34,18 +34,16 @@ jobs:
             - cypress.json
             - index.html
 
-  testFF:
+  testE:
     <<: *defaults
     steps:
       - attach_workspace:
           at: /root/app
       - run: ls -la cypress
-      - run: firefox --version
-      - run: pwd
       - run: ls -la cypress/integration
       - run:
           name: Running E2E tests A
-          command: $(npm bin)/cypress run --spec cypress/integration/examplea-spec.js --browser firefox --reporter junit --reporter-options "mochaFile=results/my-test-output.xml"
+          command: $(npm bin)/cypress run --spec cypress/integration/examplea-spec.js --reporter junit --reporter-options "mochaFile=results/my-test-output.xml"
       - store_test_results:
           path: results
       - store_artifacts:
@@ -78,7 +76,7 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - testFF:
+      - testE:
           requires:
             - build
       - testChrome:
