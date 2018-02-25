@@ -40,7 +40,7 @@ jobs:
       - attach_workspace:
           at: /root/app
       - run: ls -la cypress
-      - run: apt-get update && apt-get install -y firefox
+      - run: apt update && apt install firefox-esr
       - run: firefox --version
       - run: pwd
       - run: ls -la cypress/integration
